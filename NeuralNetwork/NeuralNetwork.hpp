@@ -5,6 +5,7 @@
 #include "InputNeuron.hpp"
 #include "WorkingNeuron.hpp"
 #include "ActivationFunction.hpp"
+#include "Tools.hpp"
 
 namespace NeuralNetwork
 {
@@ -12,9 +13,9 @@ namespace NeuralNetwork
 	{
 	private:
 		ActivationFunction* activationFunction;
-		std::vector<InputNeuron> inputNeurons;
-		std::vector<WorkingNeuron> hiddenNeurons;
-		std::vector<WorkingNeuron> outputNeurons;
+		std::vector<InputNeuron*> inputNeurons;
+		std::vector<WorkingNeuron*> hiddenNeurons;
+		std::vector<WorkingNeuron*> outputNeurons;
 
 		void createHiddenNeurons();
 
@@ -29,6 +30,8 @@ namespace NeuralNetwork
 
 		void createMesh();
 		void createMesh(const std::vector<double>& weights);
+
+		void clear();
 
 		std::vector<double> getWeights();
 	};

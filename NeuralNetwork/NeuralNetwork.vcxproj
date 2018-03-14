@@ -120,6 +120,7 @@
     <ClInclude Include="InputNeuron.hpp" />
     <ClInclude Include="NeuralNetwork.hpp" />
     <ClInclude Include="Neuron.hpp" />
+    <ClInclude Include="Tools.hpp" />
     <ClInclude Include="WorkingNeuron.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +128,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NeuralNetwork.cpp" />
     <ClCompile Include="InputNeuron.cpp" />
+    <ClCompile Include="Tools.cpp" />
     <ClCompile Include="WorkingNeuron.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
